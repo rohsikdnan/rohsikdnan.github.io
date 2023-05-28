@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBSITES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Github Pages</h1>
+        <div id="repo"></div>
+
+
+        <h1>BLOGS For Learning</h1>
+        <a href="https://narvstechxis.blogspot.com/" target="_blank" rel="noopener noreferrer">Narv's tech xis</a>
+        <a href="https://nandkishorofficial79.blogspot.com/" target="_blank" rel="noopener noreferrer">knowledge
+            treasure</a>
+        <a href="https://freetechnicalcourse.blogspot.com/" target="_blank" rel="noopener noreferrer">free courses</a>
+
+
+
+
+        <h1>Free Web Tools</h1>
+        <a href="https://passwordgeneratorsimple.blogspot.com/" target="_blank" rel="noopener noreferrer">Password
+            Generator</a>
+        <a href="https://passwordgeneratorultra.blogspot.com/" target="_blank" rel="noopener noreferrer">Password
+            Generator-pro</a>
+        <a href="https://smurlopener.blogspot.com/" target="_blank" rel="noopener noreferrer">multi url opener</a>
+        <a href="https://javascripteventkeycodes.blogspot.com/" target="_blank" rel="noopener noreferrer">javascript
+            keycodes</a>
+        <a href="https://tiny.cu.ma/" target="_blank" rel="noopener noreferrer">URL shortner</a>
+        <a href="https://ups.cu.ma/" target="_blank" rel="noopener noreferrer">Private Note</a>
+        <a href="./rarreg.key" target="_blank" rel="noopener noreferrer" download>Winrar Key</a>
+        <a href="./IDM 6 38 Build18.zip" target="_blank" rel="noopener noreferrer" download>IDM Key</a>
+
+
+    </div>
+
+
+    <script>
+        let links = {
+            repo: [
+                {
+                    name: "html editor",
+                    url: "html-editor"
+                },
+                {
+                    name: "multi url opener",
+                    url: "multi-url-opener"
+                },
+                {
+                    name: "Password Generator",
+                    url: "pgs"
+                },
+                {
+                    name: "Password Generator Ultra",
+                    url: "pgu"
+                },
+                {
+                    name: "Js Keycode",
+                    url: "js-keycode"
+                },
+                {
+                    name: "learn typing",
+                    url: "learn-typing"
+                },
+                {
+                    name: "Todo App",
+                    url: "todo-app"
+                },
+                {
+                    name: "Sketch Box",
+                    url: "sketch-box"
+                },
+                {
+                    name: "Clock",
+                    url: "clock"
+                },
+                {
+                    name: "Tic Tac Toe",
+                    url: "tic-tac-toe"
+                },
+                {
+                    name: "Quote Generator",
+                    url: "quote-generator"
+                },
+                {
+                    name: "Sudoku",
+                    url: "sudoku"
+                },
+                {
+                    name: "fancy border radius 4",
+                    url: "fancy-border-radius-4"
+                },
+                {
+                    name: "fancy border radius 8",
+                    url: "fancy-border-radius-8"
+                },
+                {
+                    name: "fancy border radius",
+                    url: "fancy-border-radius"
+                },
+                {
+                    name: "Chess",
+                    url: "chess"
+                },
+            ]
+
+        }
+
+        links.repo.map(({url,name}) => {
+            document.getElementById('repo').innerHTML += `<a href="${url}" target="_blank" rel="noopener noreferrer">${name}</a>`
+        })
+
+        let allLinks = document.querySelectorAll('a');
+        allLinks.forEach(ele => ele.innerHTML += `<span></span><span></span><span></span><span></span>`);
+
+        const changeColor = () => {
+            allLinks.forEach(element => {
+                let r = Math.floor(Math.random() * 255);
+                let g = Math.floor(Math.random() * 255);
+                let b = Math.floor(Math.random() * 255);
+                element.style.setProperty("--colorLink", `rgb(${r}, ${g}, ${b})`)
+            });
+        }
+        changeColor();
+        setInterval(changeColor, 1000);
+        // data-msg-id = "4314"
+        // var id = 72670
+        // var count = 0;
+        // var itv = setInterval(() => {
+        //     if (count == 47) clearInterval(itv);
+        //     do {
+        //         var dmi = Number(document.querySelector(`div[data-msg-id="${id}"] span[title="link"] + a`));
+        //         id--;
+        //     } while (!dmi);
+        //     if (dmi) {
+        //         dmi.scrollIntoView();
+        //         window.open(dmi.href);
+        //         count++;
+        //         console.log(count)
+        //     }
+        // }, 5000);
+    </script>
+</body>
+
+</html>
